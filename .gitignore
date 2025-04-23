@@ -1,0 +1,56 @@
+﻿## Archivos de compilación
+bin/
+obj/
+
+## Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Configuración de Rider
+.idea/
+
+## Archivos de dependencias
+packages/
+*.nupkg
+*.snupkg
+
+## Archivos de logs
+*.log
+
+## Configuración de IIS Express
+.vs/
+.vs/*
+.vscode/
+*.launchSettings.json
+
+## Archivos generados
+Generated_Code/
+
+## Archivos de entorno
+.env
+
+## Publicaciones
+publish/
+out/
+
+## Base de datos local
+*.mdf
+*.ldf
+
+## Configuración de sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Archivos de bloqueo
+project.lock.json
+project.fragment.lock.json
+
+## Archivos de seguridad
+secrets.json
+
+## Otros archivos
+*.db
+*.sqlite
