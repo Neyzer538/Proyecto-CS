@@ -239,3 +239,9 @@ C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\runtime
 C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\obj\Debug\net8.0\mantenimiento.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\obj\Debug\net8.0\mantenimiento.sourcelink.json

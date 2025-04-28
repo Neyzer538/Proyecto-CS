@@ -20,25 +20,26 @@ namespace mantenimiento.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);  // Para no perder la configuración que ya has hecho
+            base.OnModelCreating(modelBuilder);
 
-            // Configuración de relaciones
+            // config de relaciones
             modelBuilder.Entity<Pago>()
-    .HasKey(p => p.IdPago);
+            .HasKey(p => p.IdPago);
 
-            // Relación uno a uno entre Orden y Pago
+            // relacion de orden y pago
             modelBuilder.Entity<Orden>()
-                .HasOne(o => o.Pago)  // Una Orden tiene un Pago
-                .WithOne(p => p.Orden) // Un Pago está relacionado con una Orden
-                .HasForeignKey<Orden>(o => o.IdPago)  // La clave foránea está en la tabla Orden
-                .OnDelete(DeleteBehavior.Restrict);  // Restricción de eliminación (puedes ajustar esto)
+                .HasOne(o => o.Pago)  
+                .WithOne(p => p.Orden) 
+                .HasForeignKey<Orden>(o => o.IdPago)  
+                .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<Pago>()
                 .HasOne(p => p.Orden)
                 .WithOne(o => o.Pago)
-                .HasForeignKey<Pago>(p => p.IdOrden)  // La clave foránea está en la tabla Pago
+                .HasForeignKey<Pago>(p => p.IdOrden)  
                 .OnDelete(DeleteBehavior.Cascade);
-            // Opcional: Si los nombres de tabla en SQL no coinciden con los nombres de las clases
+            
+            // consistencia con la base de datos
             modelBuilder.Entity<Usuario>().ToTable("usuarios");
             modelBuilder.Entity<Vehiculo>().ToTable("vehiculos");
             modelBuilder.Entity<Orden>().ToTable("ordenes");

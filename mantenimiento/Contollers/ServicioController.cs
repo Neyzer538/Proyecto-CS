@@ -7,11 +7,11 @@ namespace mantenimiento.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ServiciosController : ControllerBase
+    public class ServicioController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public ServiciosController(AppDbContext context)
+        public ServicioController(AppDbContext context)
         {
             _context = context;
         }
