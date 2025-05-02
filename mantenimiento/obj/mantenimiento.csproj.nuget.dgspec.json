@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\mantenimiento.csproj": {}
+    "C:\\Users\\neyze\\Source\\Repos\\Proyecto-CS\\mantenimiento\\mantenimiento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\mantenimiento.csproj": {
+    "C:\\Users\\neyze\\Source\\Repos\\Proyecto-CS\\mantenimiento\\mantenimiento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\mantenimiento.csproj",
+        "projectUniqueName": "C:\\Users\\neyze\\Source\\Repos\\Proyecto-CS\\mantenimiento\\mantenimiento.csproj",
         "projectName": "mantenimiento",
-        "projectPath": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\mantenimiento.csproj",
-        "packagesPath": "C:\\Users\\denil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\obj\\",
+        "projectPath": "C:\\Users\\neyze\\Source\\Repos\\Proyecto-CS\\mantenimiento\\mantenimiento.csproj",
+        "packagesPath": "C:\\Users\\neyze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neyze\\Source\\Repos\\Proyecto-CS\\mantenimiento\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\denil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\neyze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -90,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
