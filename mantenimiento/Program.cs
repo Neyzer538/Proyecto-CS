@@ -19,8 +19,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
-
+//habilitar swagger
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // Middleware
 if (app.Environment.IsDevelopment())
