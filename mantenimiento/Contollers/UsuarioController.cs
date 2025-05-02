@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore;
 namespace mantenimiento.Contollers
 {
 
-      [Route("api/[controller]")]
-      [ApiController]
-        public class UsuarioController: ControllerBase
-        {
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UsuarioController: ControllerBase
+    {
         private readonly AppDbContext _context;
 
         public UsuarioController(AppDbContext context)
