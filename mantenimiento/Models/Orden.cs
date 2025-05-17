@@ -2,7 +2,7 @@
 {
     public class Orden
     {
-        public int Id { get; set; }
+        public int IdOrden { get; set; }
         public int IdVehiculo { get; set; }
         public int IdEmpleado { get; set; }
         public DateTime? FechaIngreso { get; set; }

@@ -2,7 +2,7 @@
 {
     public class Usuario
     {
-        public int Id { get; set; }
+        public int IdUsuario { get; set; }
         public string NombreCompleto { get; set; } = null!;
         public string Telefono { get; set; } = null!;
         public string? Correo { get; set; }

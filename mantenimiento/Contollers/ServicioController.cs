@@ -7,11 +7,11 @@ namespace mantenimiento.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ServiciosController : ControllerBase
+    public class ServicioController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public ServiciosController(AppDbContext context)
+        public ServicioController(AppDbContext context)
         {
             _context = context;
         }
@@ -38,14 +38,14 @@ namespace mantenimiento.Controllers
         {
             _context.Servicios.Add(servicio);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetServicio), new { id = servicio.Id }, servicio);
+            return CreatedAtAction(nameof(GetServicio), new { IdServicio = servicio.IdServicio }, servicio);
         }
 
         // PUT: api/servicios/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutServicio(int id, Servicio servicio)
         {
-            if (id != servicio.Id) return BadRequest();
+            if (id != servicio.IdServicio) return BadRequest();
 
             _context.Entry(servicio).State = EntityState.Modified;
 
@@ -55,7 +55,7 @@ namespace mantenimiento.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!_context.Servicios.Any(e => e.Id == id)) return NotFound();
+                if (!_context.Servicios.Any(e => e.IdServicio == id)) return NotFound();
                 else throw;
             }
 

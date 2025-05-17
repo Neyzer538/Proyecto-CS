@@ -3,21 +3,43 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Agrega DbContext con MySQL
+// DbContext con MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
     ));
 
-// Agrega servicios de Razor Pages y Controladores
+// Configuración de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 builder.Services.AddRazorPages();
-builder.Services.AddControllers(); // ?? Importante para APIs
+builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Middleware
-if (!app.Environment.IsDevelopment())
+// Usa CORS antes de los middlewares de Routing y Authorization
+app.UseCors("AllowFrontend");
+
+// habilitar swagger
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+else
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts();
@@ -30,8 +52,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-// Mapea rutas de Razor Pages y APIs
 app.MapRazorPages();
-app.MapControllers(); // ?? Esto activa tus rutas de API (como /api/servicios)
+app.MapControllers();
 
 app.Run();

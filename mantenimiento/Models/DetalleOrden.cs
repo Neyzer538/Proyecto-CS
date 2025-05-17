@@ -2,7 +2,7 @@
 {
     public class DetalleOrden
     {
-        public int Id { get; set; }
+        public int IdDetalleOrden { get; set; }
         public int IdOrden { get; set; }
         public int IdServicio { get; set; }
         public decimal? Precios { get; set; }

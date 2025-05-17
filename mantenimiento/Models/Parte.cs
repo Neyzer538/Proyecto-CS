@@ -2,7 +2,7 @@
 {
     public class Parte
     {
-        public int Id { get; set; }
+        public int IdParte { get; set; }
         public string NombreParte { get; set; } = null!;
         public string? Descripcion { get; set; }
         public int? Stock { get; set; } = 0;

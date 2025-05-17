@@ -2,7 +2,7 @@
 {
     public class Vehiculo
     {
-        public int Id { get; set; }
+        public int IdVehiculo { get; set; }
         public int IdUsuario { get; set; }
         public string Marca { get; set; } = null!;
         public string Modelo { get; set; } = null!;

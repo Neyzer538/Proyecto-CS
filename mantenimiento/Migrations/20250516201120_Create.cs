@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace mantenimiento.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateRelations : Migration
+    public partial class Create : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,7 +16,7 @@ namespace mantenimiento.Migrations
                 name: "partes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdParte = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     NombreParte = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -27,7 +27,7 @@ namespace mantenimiento.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_partes", x => x.Id);
+                    table.PrimaryKey("PK_partes", x => x.IdParte);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -35,7 +35,7 @@ namespace mantenimiento.Migrations
                 name: "roles",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdRol = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nombre = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -44,7 +44,7 @@ namespace mantenimiento.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_roles", x => x.Id);
+                    table.PrimaryKey("PK_roles", x => x.IdRol);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -52,19 +52,19 @@ namespace mantenimiento.Migrations
                 name: "servicios",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdServicio = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    NombreServicio = table.Column<string>(type: "longtext", nullable: false)
+                    Nombre = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Descripcion = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    PrecioBase = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
-                    DuracionEstimada = table.Column<string>(type: "longtext", nullable: true)
+                    Costo = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    Duracion = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_servicios", x => x.Id);
+                    table.PrimaryKey("PK_servicios", x => x.IdServicio);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -72,7 +72,7 @@ namespace mantenimiento.Migrations
                 name: "usuarios",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdUsuario = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     NombreCompleto = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -86,7 +86,7 @@ namespace mantenimiento.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_usuarios", x => x.Id);
+                    table.PrimaryKey("PK_usuarios", x => x.IdUsuario);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -94,7 +94,7 @@ namespace mantenimiento.Migrations
                 name: "empleados",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdEmpleado = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nombre = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -109,16 +109,16 @@ namespace mantenimiento.Migrations
                     FechaContratacion = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     Salario = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
                     IdRol = table.Column<int>(type: "int", nullable: false),
-                    RolId = table.Column<int>(type: "int", nullable: false)
+                    RolIdRol = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_empleados", x => x.Id);
+                    table.PrimaryKey("PK_empleados", x => x.IdEmpleado);
                     table.ForeignKey(
-                        name: "FK_empleados_roles_RolId",
-                        column: x => x.RolId,
+                        name: "FK_empleados_roles_RolIdRol",
+                        column: x => x.RolIdRol,
                         principalTable: "roles",
-                        principalColumn: "Id",
+                        principalColumn: "IdRol",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -127,7 +127,7 @@ namespace mantenimiento.Migrations
                 name: "vehiculos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdVehiculo = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     IdUsuario = table.Column<int>(type: "int", nullable: false),
                     Marca = table.Column<string>(type: "longtext", nullable: false)
@@ -141,16 +141,16 @@ namespace mantenimiento.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Tipo = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    UsuarioId = table.Column<int>(type: "int", nullable: false)
+                    UsuarioIdUsuario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_vehiculos", x => x.Id);
+                    table.PrimaryKey("PK_vehiculos", x => x.IdVehiculo);
                     table.ForeignKey(
-                        name: "FK_vehiculos_usuarios_UsuarioId",
-                        column: x => x.UsuarioId,
+                        name: "FK_vehiculos_usuarios_UsuarioIdUsuario",
+                        column: x => x.UsuarioIdUsuario,
                         principalTable: "usuarios",
-                        principalColumn: "Id",
+                        principalColumn: "IdUsuario",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -159,7 +159,7 @@ namespace mantenimiento.Migrations
                 name: "ordenes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdOrden = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     IdVehiculo = table.Column<int>(type: "int", nullable: false),
                     IdEmpleado = table.Column<int>(type: "int", nullable: false),
@@ -169,24 +169,24 @@ namespace mantenimiento.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Observaciones = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    VehiculoId = table.Column<int>(type: "int", nullable: false),
-                    EmpleadoId = table.Column<int>(type: "int", nullable: false),
+                    VehiculoIdVehiculo = table.Column<int>(type: "int", nullable: false),
+                    EmpleadoIdEmpleado = table.Column<int>(type: "int", nullable: false),
                     IdPago = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ordenes", x => x.Id);
+                    table.PrimaryKey("PK_ordenes", x => x.IdOrden);
                     table.ForeignKey(
-                        name: "FK_ordenes_empleados_EmpleadoId",
-                        column: x => x.EmpleadoId,
+                        name: "FK_ordenes_empleados_EmpleadoIdEmpleado",
+                        column: x => x.EmpleadoIdEmpleado,
                         principalTable: "empleados",
-                        principalColumn: "Id",
+                        principalColumn: "IdEmpleado",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ordenes_vehiculos_VehiculoId",
-                        column: x => x.VehiculoId,
+                        name: "FK_ordenes_vehiculos_VehiculoIdVehiculo",
+                        column: x => x.VehiculoIdVehiculo,
                         principalTable: "vehiculos",
-                        principalColumn: "Id",
+                        principalColumn: "IdVehiculo",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -195,30 +195,30 @@ namespace mantenimiento.Migrations
                 name: "detalle_ordenes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdDetalleOrden = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     IdOrden = table.Column<int>(type: "int", nullable: false),
                     IdServicio = table.Column<int>(type: "int", nullable: false),
                     Precios = table.Column<decimal>(type: "decimal(65,30)", nullable: true),
                     Observaciones = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    OrdenId = table.Column<int>(type: "int", nullable: false),
-                    ServicioId = table.Column<int>(type: "int", nullable: false)
+                    OrdenIdOrden = table.Column<int>(type: "int", nullable: false),
+                    ServicioIdServicio = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_detalle_ordenes", x => x.Id);
+                    table.PrimaryKey("PK_detalle_ordenes", x => x.IdDetalleOrden);
                     table.ForeignKey(
-                        name: "FK_detalle_ordenes_ordenes_OrdenId",
-                        column: x => x.OrdenId,
+                        name: "FK_detalle_ordenes_ordenes_OrdenIdOrden",
+                        column: x => x.OrdenIdOrden,
                         principalTable: "ordenes",
-                        principalColumn: "Id",
+                        principalColumn: "IdOrden",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_detalle_ordenes_servicios_ServicioId",
-                        column: x => x.ServicioId,
+                        name: "FK_detalle_ordenes_servicios_ServicioIdServicio",
+                        column: x => x.ServicioIdServicio,
                         principalTable: "servicios",
-                        principalColumn: "Id",
+                        principalColumn: "IdServicio",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -227,29 +227,29 @@ namespace mantenimiento.Migrations
                 name: "ordenes_partes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    IdOrdenParte = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     IdOrden = table.Column<int>(type: "int", nullable: false),
                     IdParte = table.Column<int>(type: "int", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: true),
                     PrecioTotal = table.Column<decimal>(type: "decimal(65,30)", nullable: true),
-                    OrdenId = table.Column<int>(type: "int", nullable: false),
-                    ParteId = table.Column<int>(type: "int", nullable: false)
+                    OrdenIdOrden = table.Column<int>(type: "int", nullable: false),
+                    ParteIdParte = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ordenes_partes", x => x.Id);
+                    table.PrimaryKey("PK_ordenes_partes", x => x.IdOrdenParte);
                     table.ForeignKey(
-                        name: "FK_ordenes_partes_ordenes_OrdenId",
-                        column: x => x.OrdenId,
+                        name: "FK_ordenes_partes_ordenes_OrdenIdOrden",
+                        column: x => x.OrdenIdOrden,
                         principalTable: "ordenes",
-                        principalColumn: "Id",
+                        principalColumn: "IdOrden",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ordenes_partes_partes_ParteId",
-                        column: x => x.ParteId,
+                        name: "FK_ordenes_partes_partes_ParteIdParte",
+                        column: x => x.ParteIdParte,
                         principalTable: "partes",
-                        principalColumn: "Id",
+                        principalColumn: "IdParte",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -275,45 +275,45 @@ namespace mantenimiento.Migrations
                         name: "FK_pagos_ordenes_IdOrden",
                         column: x => x.IdOrden,
                         principalTable: "ordenes",
-                        principalColumn: "Id",
+                        principalColumn: "IdOrden",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_detalle_ordenes_OrdenId",
+                name: "IX_detalle_ordenes_OrdenIdOrden",
                 table: "detalle_ordenes",
-                column: "OrdenId");
+                column: "OrdenIdOrden");
 
             migrationBuilder.CreateIndex(
-                name: "IX_detalle_ordenes_ServicioId",
+                name: "IX_detalle_ordenes_ServicioIdServicio",
                 table: "detalle_ordenes",
-                column: "ServicioId");
+                column: "ServicioIdServicio");
 
             migrationBuilder.CreateIndex(
-                name: "IX_empleados_RolId",
+                name: "IX_empleados_RolIdRol",
                 table: "empleados",
-                column: "RolId");
+                column: "RolIdRol");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ordenes_EmpleadoId",
+                name: "IX_ordenes_EmpleadoIdEmpleado",
                 table: "ordenes",
-                column: "EmpleadoId");
+                column: "EmpleadoIdEmpleado");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ordenes_VehiculoId",
+                name: "IX_ordenes_VehiculoIdVehiculo",
                 table: "ordenes",
-                column: "VehiculoId");
+                column: "VehiculoIdVehiculo");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ordenes_partes_OrdenId",
+                name: "IX_ordenes_partes_OrdenIdOrden",
                 table: "ordenes_partes",
-                column: "OrdenId");
+                column: "OrdenIdOrden");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ordenes_partes_ParteId",
+                name: "IX_ordenes_partes_ParteIdParte",
                 table: "ordenes_partes",
-                column: "ParteId");
+                column: "ParteIdParte");
 
             migrationBuilder.CreateIndex(
                 name: "IX_pagos_IdOrden",
@@ -322,9 +322,9 @@ namespace mantenimiento.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_vehiculos_UsuarioId",
+                name: "IX_vehiculos_UsuarioIdUsuario",
                 table: "vehiculos",
-                column: "UsuarioId");
+                column: "UsuarioIdUsuario");
         }
 
         /// <inheritdoc />

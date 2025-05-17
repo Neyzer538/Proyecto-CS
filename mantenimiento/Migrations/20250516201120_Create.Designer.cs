@@ -12,8 +12,8 @@ using mantenimiento.Data;
 namespace mantenimiento.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250423191553_UpdateRelations")]
-    partial class UpdateRelations
+    [Migration("20250516201120_Create")]
+    partial class Create
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,11 +58,11 @@ namespace mantenimiento.Migrations
 
             modelBuilder.Entity("mantenimiento.Models.DetalleOrden", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdDetalleOrden")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdDetalleOrden"));
 
                     b.Property<int>("IdOrden")
                         .HasColumnType("int");
@@ -73,31 +73,31 @@ namespace mantenimiento.Migrations
                     b.Property<string>("Observaciones")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("OrdenId")
+                    b.Property<int>("OrdenIdOrden")
                         .HasColumnType("int");
 
                     b.Property<decimal?>("Precios")
                         .HasColumnType("decimal(65,30)");
 
-                    b.Property<int>("ServicioId")
+                    b.Property<int>("ServicioIdServicio")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdDetalleOrden");
 
-                    b.HasIndex("OrdenId");
+                    b.HasIndex("OrdenIdOrden");
 
-                    b.HasIndex("ServicioId");
+                    b.HasIndex("ServicioIdServicio");
 
                     b.ToTable("detalle_ordenes", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Empleado", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdEmpleado")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdEmpleado"));
 
                     b.Property<string>("Apellido")
                         .IsRequired()
@@ -121,7 +121,7 @@ namespace mantenimiento.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("RolId")
+                    b.Property<int>("RolIdRol")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Salario")
@@ -131,22 +131,22 @@ namespace mantenimiento.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdEmpleado");
 
-                    b.HasIndex("RolId");
+                    b.HasIndex("RolIdRol");
 
                     b.ToTable("empleados", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Orden", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdOrden")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdOrden"));
 
-                    b.Property<int>("EmpleadoId")
+                    b.Property<int>("EmpleadoIdEmpleado")
                         .HasColumnType("int");
 
                     b.Property<string>("Estado")
@@ -170,25 +170,25 @@ namespace mantenimiento.Migrations
                     b.Property<string>("Observaciones")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("VehiculoId")
+                    b.Property<int>("VehiculoIdVehiculo")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdOrden");
 
-                    b.HasIndex("EmpleadoId");
+                    b.HasIndex("EmpleadoIdEmpleado");
 
-                    b.HasIndex("VehiculoId");
+                    b.HasIndex("VehiculoIdVehiculo");
 
                     b.ToTable("ordenes", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.OrdenParte", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdOrdenParte")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdOrdenParte"));
 
                     b.Property<int?>("Cantidad")
                         .HasColumnType("int");
@@ -199,31 +199,31 @@ namespace mantenimiento.Migrations
                     b.Property<int>("IdParte")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrdenId")
+                    b.Property<int>("OrdenIdOrden")
                         .HasColumnType("int");
 
-                    b.Property<int>("ParteId")
+                    b.Property<int>("ParteIdParte")
                         .HasColumnType("int");
 
                     b.Property<decimal?>("PrecioTotal")
                         .HasColumnType("decimal(65,30)");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdOrdenParte");
 
-                    b.HasIndex("OrdenId");
+                    b.HasIndex("OrdenIdOrden");
 
-                    b.HasIndex("ParteId");
+                    b.HasIndex("ParteIdParte");
 
                     b.ToTable("ordenes_partes", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Parte", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdParte")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdParte"));
 
                     b.Property<string>("Descripcion")
                         .HasColumnType("longtext");
@@ -238,18 +238,18 @@ namespace mantenimiento.Migrations
                     b.Property<int?>("Stock")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdParte");
 
                     b.ToTable("partes", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Rol", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdRol")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdRol"));
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
@@ -259,45 +259,45 @@ namespace mantenimiento.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdRol");
 
                     b.ToTable("roles", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Servicio", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdServicio")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdServicio"));
+
+                    b.Property<decimal>("Costo")
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("DuracionEstimada")
+                    b.Property<string>("Duracion")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("NombreServicio")
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("PrecioBase")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.HasKey("Id");
+                    b.HasKey("IdServicio");
 
                     b.ToTable("servicios", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Usuario", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdUsuario")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdUsuario"));
 
                     b.Property<string>("Correo")
                         .HasColumnType("longtext");
@@ -317,18 +317,18 @@ namespace mantenimiento.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdUsuario");
 
                     b.ToTable("usuarios", (string)null);
                 });
 
             modelBuilder.Entity("mantenimiento.Models.Vehiculo", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdVehiculo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdVehiculo"));
 
                     b.Property<int?>("Anio")
                         .HasColumnType("int");
@@ -355,12 +355,12 @@ namespace mantenimiento.Migrations
                     b.Property<string>("Tipo")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("UsuarioId")
+                    b.Property<int>("UsuarioIdUsuario")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdVehiculo");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasIndex("UsuarioIdUsuario");
 
                     b.ToTable("vehiculos", (string)null);
                 });
@@ -380,13 +380,13 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Orden", "Orden")
                         .WithMany("Detalles")
-                        .HasForeignKey("OrdenId")
+                        .HasForeignKey("OrdenIdOrden")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("mantenimiento.Models.Servicio", "Servicio")
                         .WithMany()
-                        .HasForeignKey("ServicioId")
+                        .HasForeignKey("ServicioIdServicio")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -399,7 +399,7 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Rol", "Rol")
                         .WithMany()
-                        .HasForeignKey("RolId")
+                        .HasForeignKey("RolIdRol")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -410,13 +410,13 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Empleado", "Empleado")
                         .WithMany()
-                        .HasForeignKey("EmpleadoId")
+                        .HasForeignKey("EmpleadoIdEmpleado")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("mantenimiento.Models.Vehiculo", "Vehiculo")
                         .WithMany()
-                        .HasForeignKey("VehiculoId")
+                        .HasForeignKey("VehiculoIdVehiculo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -429,13 +429,13 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Orden", "Orden")
                         .WithMany("Partes")
-                        .HasForeignKey("OrdenId")
+                        .HasForeignKey("OrdenIdOrden")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("mantenimiento.Models.Parte", "Parte")
                         .WithMany()
-                        .HasForeignKey("ParteId")
+                        .HasForeignKey("ParteIdParte")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -448,7 +448,7 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Usuario", "Usuario")
                         .WithMany("Vehiculos")
-                        .HasForeignKey("UsuarioId")
+                        .HasForeignKey("UsuarioIdUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
