@@ -9,5 +9,5 @@ public class Pago
     public string? MetodoPago { get; set; }
     public string? EstadoPago { get; set; } = "pendiente";
 
-    public Orden Orden { get; set; }
+    public Orden? Orden { get; set; }
 }

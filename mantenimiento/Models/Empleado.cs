@@ -15,6 +15,7 @@ namespace mantenimiento.Models
         public int IdRol { get; set; }
 
         public int? RolIdRol { get; set; }
+
         [JsonIgnore]
         public Rol? Rol { get; set; }
     }

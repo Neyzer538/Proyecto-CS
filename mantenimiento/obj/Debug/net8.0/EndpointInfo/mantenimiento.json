@@ -2036,11 +2036,6 @@
             },
             "nullable": true
           },
-          "idPago": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "pago": {
             "$ref": "#/components/schemas/Pago"
           }
@@ -2232,10 +2227,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "idUsuario": {
-            "type": "integer",
-            "format": "int32"
-          },
           "marca": {
             "type": "string",
             "nullable": true
@@ -2260,6 +2251,10 @@
           "tipo": {
             "type": "string",
             "nullable": true
+          },
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
           },
           "usuario": {
             "$ref": "#/components/schemas/Usuario"

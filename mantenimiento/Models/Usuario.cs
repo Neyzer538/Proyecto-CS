@@ -10,6 +10,7 @@
         public DateTime FechaRegistro { get; set; }
 
         public List<Vehiculo>? Vehiculos { get; set; }
+
     }
 
 }

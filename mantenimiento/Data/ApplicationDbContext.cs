@@ -47,25 +47,31 @@ namespace mantenimiento.Data
             .HasKey(e => e.IdUsuario);
 
             modelBuilder.Entity<Vehiculo>()
-            .HasKey(e => e.IdVehiculo);
+            .HasOne(v => v.Usuario)
+            .WithMany(u => u.Vehiculos)
+            .HasForeignKey(v => v.IdUsuario);
 
             // config de relaciones
             modelBuilder.Entity<Pago>()
             .HasKey(p => p.IdPago);
 
-            // relacion de orden y pago
-            modelBuilder.Entity<Orden>()
-                .HasOne(o => o.Pago)  
-                .WithOne(p => p.Orden) 
-                .HasForeignKey<Orden>(o => o.IdPago)  
-                .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<Pago>()
-                .HasOne(p => p.Orden)
-                .WithOne(o => o.Pago)
-                .HasForeignKey<Pago>(p => p.IdOrden)  
-                .OnDelete(DeleteBehavior.Cascade);
-            
+     .HasOne(p => p.Orden)
+     .WithOne(o => o.Pago)
+     .HasForeignKey<Pago>(p => p.IdOrden)
+     .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Orden>()
+    .HasOne(o => o.Vehiculo)
+    .WithMany() 
+    .HasForeignKey(o => o.IdVehiculo)
+    .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Orden>()
+    .HasOne(o => o.Empleado)
+    .WithMany() 
+    .HasForeignKey(o => o.IdEmpleado)
+    .OnDelete(DeleteBehavior.Restrict);
             // consistencia con la base de datos
             modelBuilder.Entity<Usuario>().ToTable("usuarios");
             modelBuilder.Entity<Vehiculo>().ToTable("vehiculos");

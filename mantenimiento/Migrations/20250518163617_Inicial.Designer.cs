@@ -12,8 +12,8 @@ using mantenimiento.Data;
 namespace mantenimiento.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250516201120_Create")]
-    partial class Create
+    [Migration("20250518163617_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -121,7 +121,7 @@ namespace mantenimiento.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("RolIdRol")
+                    b.Property<int?>("RolIdRol")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Salario")
@@ -146,9 +146,6 @@ namespace mantenimiento.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("IdOrden"));
 
-                    b.Property<int>("EmpleadoIdEmpleado")
-                        .HasColumnType("int");
-
                     b.Property<string>("Estado")
                         .HasColumnType("longtext");
 
@@ -161,23 +158,17 @@ namespace mantenimiento.Migrations
                     b.Property<int>("IdEmpleado")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdPago")
-                        .HasColumnType("int");
-
                     b.Property<int>("IdVehiculo")
                         .HasColumnType("int");
 
                     b.Property<string>("Observaciones")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("VehiculoIdVehiculo")
-                        .HasColumnType("int");
-
                     b.HasKey("IdOrden");
 
-                    b.HasIndex("EmpleadoIdEmpleado");
+                    b.HasIndex("IdEmpleado");
 
-                    b.HasIndex("VehiculoIdVehiculo");
+                    b.HasIndex("IdVehiculo");
 
                     b.ToTable("ordenes", (string)null);
                 });
@@ -355,12 +346,9 @@ namespace mantenimiento.Migrations
                     b.Property<string>("Tipo")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("UsuarioIdUsuario")
-                        .HasColumnType("int");
-
                     b.HasKey("IdVehiculo");
 
-                    b.HasIndex("UsuarioIdUsuario");
+                    b.HasIndex("IdUsuario");
 
                     b.ToTable("vehiculos", (string)null);
                 });
@@ -399,9 +387,7 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Rol", "Rol")
                         .WithMany()
-                        .HasForeignKey("RolIdRol")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RolIdRol");
 
                     b.Navigation("Rol");
                 });
@@ -410,14 +396,14 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Empleado", "Empleado")
                         .WithMany()
-                        .HasForeignKey("EmpleadoIdEmpleado")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("IdEmpleado")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("mantenimiento.Models.Vehiculo", "Vehiculo")
                         .WithMany()
-                        .HasForeignKey("VehiculoIdVehiculo")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("IdVehiculo")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Empleado");
@@ -448,7 +434,7 @@ namespace mantenimiento.Migrations
                 {
                     b.HasOne("mantenimiento.Models.Usuario", "Usuario")
                         .WithMany("Vehiculos")
-                        .HasForeignKey("UsuarioIdUsuario")
+                        .HasForeignKey("IdUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -459,8 +445,7 @@ namespace mantenimiento.Migrations
                 {
                     b.Navigation("Detalles");
 
-                    b.Navigation("Pago")
-                        .IsRequired();
+                    b.Navigation("Pago");
 
                     b.Navigation("Partes");
                 });

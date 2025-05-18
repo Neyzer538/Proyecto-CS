@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using mantenimiento.Data;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace mantenimiento.Controllers
 {
@@ -16,14 +19,14 @@ namespace mantenimiento.Controllers
             _context = context;
         }
 
-        // GET: api/servicios
+        // GET: api/servicio
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Servicio>>> GetServicios()
         {
             return await _context.Servicios.ToListAsync();
         }
 
-        // GET: api/servicios/5
+        // GET: api/servicio/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Servicio>> GetServicio(int id)
         {
@@ -32,20 +35,23 @@ namespace mantenimiento.Controllers
             return servicio;
         }
 
-        // POST: api/servicios
+        // POST: api/servicio
         [HttpPost]
         public async Task<ActionResult<Servicio>> PostServicio(Servicio servicio)
         {
             _context.Servicios.Add(servicio);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetServicio), new { IdServicio = servicio.IdServicio }, servicio);
+
+            // Importante: el nombre del parámetro debe ser 'id' para que coincida con la ruta {id}
+            return CreatedAtAction(nameof(GetServicio), new { id = servicio.IdServicio }, servicio);
         }
 
-        // PUT: api/servicios/5
+        // PUT: api/servicio/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutServicio(int id, Servicio servicio)
         {
-            if (id != servicio.IdServicio) return BadRequest();
+            if (id != servicio.IdServicio)
+                return BadRequest();
 
             _context.Entry(servicio).State = EntityState.Modified;
 
@@ -55,14 +61,16 @@ namespace mantenimiento.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!_context.Servicios.Any(e => e.IdServicio == id)) return NotFound();
-                else throw;
+                if (!_context.Servicios.Any(e => e.IdServicio == id))
+                    return NotFound();
+                else
+                    throw;
             }
 
             return NoContent();
         }
 
-        // DELETE: api/servicios/5
+        // DELETE: api/servicio/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServicio(int id)
         {
