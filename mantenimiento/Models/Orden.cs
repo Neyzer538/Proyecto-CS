@@ -15,7 +15,7 @@
         public List<DetalleOrden> Detalles { get; set; }
         public List<OrdenParte> Partes { get; set; }
 
-        // Clave foránea para la relación con Pago
+        // calves foraneas para el pago
         public int? IdPago { get; set; }
         public Pago Pago { get; set; }
     }

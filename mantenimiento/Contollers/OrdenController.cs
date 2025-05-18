@@ -20,16 +20,30 @@ namespace mantenimiento.Contollers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Orden>>> GetOrden()
         {
-            return await _context.Ordenes.ToListAsync();
+            var ordenes = await _context.Ordenes
+                .Include(o => o.Vehiculo)
+                .Include(o => o.Empleado)
+                .Include(o => o.Pago)
+                .Include(o => o.Detalles)
+                .Include(o => o.Partes)
+                .ToListAsync();
+
+            return ordenes;
         }
 
         //GET: api/orden/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Orden>> GetOrden(int id)
         {
-            var orden = await _context.Ordenes.FindAsync(id);
-            if (orden == null)
+            var orden = await _context.Ordenes
+                .Include(o => o.Vehiculo)
+                .Include(o => o.Empleado)
+                .Include(o => o.Pago)
+                .Include(o => o.Detalles)
+                .Include(o => o.Partes)
+                .FirstOrDefaultAsync(o => o.IdOrden == id);
 
+            if (orden == null)
                 return NotFound();
 
             return orden;

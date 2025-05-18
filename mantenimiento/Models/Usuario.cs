@@ -9,7 +9,7 @@
         public string Direccion { get; set; } = null!;
         public DateTime FechaRegistro { get; set; }
 
-        public List<Vehiculo> Vehiculos { get; set; }
+        public List<Vehiculo>? Vehiculos { get; set; }
     }
 
 }
