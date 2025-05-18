@@ -1,4 +1,6 @@
-﻿namespace mantenimiento.Models
+﻿using System.Text.Json.Serialization;
+
+namespace mantenimiento.Models
 {
     public class Empleado
     {
@@ -12,7 +14,9 @@
         public decimal Salario { get; set; }
         public int IdRol { get; set; }
 
-        public Rol Rol { get; set; }
+        public int? RolIdRol { get; set; }
+        [JsonIgnore]
+        public Rol? Rol { get; set; }
     }
 
 }

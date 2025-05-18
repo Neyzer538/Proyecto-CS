@@ -1,4 +1,5 @@
 ﻿using mantenimiento.Data;
+using mantenimiento.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,7 +34,7 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<AuthService>();
 var app = builder.Build();
 
 // Usa CORS antes de los middlewares de Routing y Authorization

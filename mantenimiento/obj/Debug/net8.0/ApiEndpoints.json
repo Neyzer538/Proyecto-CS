@@ -218,6 +218,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "mantenimiento.Contollers.EmpleadoController",
+    "Method": "Login",
+    "RelativePath": "api/Empleado/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "mantenimiento.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "mantenimiento.Contollers.OrdenController",
     "Method": "GetOrden",
     "RelativePath": "api/Orden",

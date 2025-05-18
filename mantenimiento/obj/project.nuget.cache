@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2gmH/eX/r5g=",
+  "dgSpecHash": "9809tWGLLY4=",
   "success": true,
   "projectFilePath": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\mantenimiento.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\denil\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\denil\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\denil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\denil\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

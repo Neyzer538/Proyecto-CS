@@ -488,3 +488,4 @@ C:\Users\neyze\Source\Repos\Proyecto-CS\mantenimiento\obj\Debug\net8.0\refint\ma
 C:\Users\neyze\Source\Repos\Proyecto-CS\mantenimiento\obj\Debug\net8.0\mantenimiento.pdb
 C:\Users\neyze\Source\Repos\Proyecto-CS\mantenimiento\obj\Debug\net8.0\mantenimiento.genruntimeconfig.cache
 C:\Users\neyze\Source\Repos\Proyecto-CS\mantenimiento\obj\Debug\net8.0\ref\mantenimiento.dll
+C:\Users\denil\source\repos\mantenimiento\mantenimiento\bin\Debug\net8.0\BCrypt.Net-Core.dll
