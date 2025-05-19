@@ -49,9 +49,8 @@ namespace mantenimiento.Contollers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutParte(int id, Parte parte)
         {
-            if (id != parte.IdParte)
-
-                return BadRequest();
+            
+            parte.IdParte = id;
 
             _context.Entry(parte).State = EntityState.Modified;
 

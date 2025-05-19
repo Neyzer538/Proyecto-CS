@@ -3,32 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\denil\\source\\repos\\mantenimiento\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Migrations\\20250518163617_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:mantenimiento\\Migrations\\20250518163617_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\detalleordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\detalleordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\ordenparte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\ordenparte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\ordenpartecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\ordenpartecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\partecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\partecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\contollers\\vehiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\contollers\\vehiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\ordenparte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\ordenparte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\detalleorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\detalleorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\migrations\\20250518163617_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\migrations\\20250518163617_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|c:\\users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454EDD16-4AC1-4B80-B28E-F63EDA3F2550}|mantenimiento\\mantenimiento.csproj|solutionrelative:mantenimiento\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +86,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\EmpleadoController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\EmpleadoController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:59:16.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdenController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\OrdenController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\OrdenController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\OrdenController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\OrdenController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwEIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:59:10.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdenParteController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\OrdenParteController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\OrdenParteController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\OrdenParteController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\OrdenParteController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:59:01.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\PagoController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\PagoController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\PagoController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:58:55.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ParteController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\ParteController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\ParteController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\ParteController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\ParteController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:58:47.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RolController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\RolController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\RolController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\RolController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\RolController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAxwDIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:58:38.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\UsuarioController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\UsuarioController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:58:24.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServicioController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\ServicioController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\ServicioController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\ServicioController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\ServicioController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T15:34:28.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DetalleOrdenController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\DetalleOrdenController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\DetalleOrdenController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\DetalleOrdenController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\DetalleOrdenController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:59:27.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehiculoController.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\VehiculoController.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\VehiculoController.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\VehiculoController.cs",
+              "RelativeToolTip": "mantenimiento\\Contollers\\VehiculoController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T16:58:13.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Models\\Vehiculo.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Vehiculo.cs",
+              "RelativeToolTip": "mantenimiento\\Models\\Vehiculo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:56:00.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Empleado.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Models\\Empleado.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Empleado.cs",
+              "RelativeToolTip": "mantenimiento\\Models\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:53:23.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DetalleOrden.cs",
+              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\DetalleOrden.cs",
+              "RelativeDocumentMoniker": "mantenimiento\\Models\\DetalleOrden.cs",
+              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\DetalleOrden.cs",
+              "RelativeToolTip": "mantenimiento\\Models\\DetalleOrden.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:27:47.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "20250518163617_Inicial.cs",
               "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Migrations\\20250518163617_Inicial.cs",
               "RelativeDocumentMoniker": "mantenimiento\\Migrations\\20250518163617_Inicial.cs",
@@ -55,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "mantenimiento\\Data\\ApplicationDbContext.cs",
@@ -63,12 +280,11 @@
               "RelativeToolTip": "mantenimiento\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAmwEcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:15:58.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T16:15:58.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Pago.cs",
               "RelativeDocumentMoniker": "mantenimiento\\Models\\Pago.cs",
@@ -76,12 +292,11 @@
               "RelativeToolTip": "mantenimiento\\Models\\Pago.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:03:44.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T16:03:44.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "OrdenParte.cs",
               "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\OrdenParte.cs",
               "RelativeDocumentMoniker": "mantenimiento\\Models\\OrdenParte.cs",
@@ -94,33 +309,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Orden.cs",
               "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Orden.cs",
               "RelativeDocumentMoniker": "mantenimiento\\Models\\Orden.cs",
               "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Orden.cs",
               "RelativeToolTip": "mantenimiento\\Models\\Orden.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T16:03:25.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ServicioController.cs",
-              "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\ServicioController.cs",
-              "RelativeDocumentMoniker": "mantenimiento\\Contollers\\ServicioController.cs",
-              "ToolTip": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Contollers\\ServicioController.cs",
-              "RelativeToolTip": "mantenimiento\\Contollers\\ServicioController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAmwFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T15:34:28.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Servicio.cs",
               "DocumentMoniker": "C:\\Users\\denil\\source\\repos\\mantenimiento\\mantenimiento\\Models\\Servicio.cs",
               "RelativeDocumentMoniker": "mantenimiento\\Models\\Servicio.cs",

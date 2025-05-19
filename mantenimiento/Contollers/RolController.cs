@@ -48,6 +48,7 @@ namespace mantenimiento.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutRol(int id, Rol rol)
         {
+            rol.IdRol = id;
 
             _context.Entry(rol).State = EntityState.Modified;
 

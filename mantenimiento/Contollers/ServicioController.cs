@@ -50,8 +50,8 @@ namespace mantenimiento.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutServicio(int id, Servicio servicio)
         {
-            if (id != servicio.IdServicio)
-                return BadRequest();
+            
+            servicio.IdServicio = id;
 
             _context.Entry(servicio).State = EntityState.Modified;
 

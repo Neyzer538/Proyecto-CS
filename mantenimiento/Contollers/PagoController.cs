@@ -49,9 +49,8 @@ namespace mantenimiento.Contollers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPago(int id, Pago pago)
         {
-            if (id != pago.IdPago)
-
-                return BadRequest();
+           
+            pago.IdPago = id;
 
             _context.Entry(pago).State = EntityState.Modified;
 
